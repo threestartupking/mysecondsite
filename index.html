@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stylish Simple Site</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background: #f8f9fa;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    .text-container {
+      margin-top: 30px;
+    }
+
+    .text-container p {
+      font-size: 1.3rem;
+      color: #333;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .text-container p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="images/img1.webp" alt="Big Image" />
+
+  <div class="text-container">
+    <p>Welcome to a beautifully simple website.</p>
+    <p>This design keeps things minimal and stylish.</p>
+    <p>Focus on content, aesthetics, and clarity.</p>
+  </div>
+
+</body>
+</html>
